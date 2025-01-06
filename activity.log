@@ -1568,3 +1568,4 @@
 [2025-01-06T04:55:09.000Z] - Regenerating initramfs (mkinitcpio -P)
 [2025-01-06T06:02:32.000Z] - Updating documentation strings for custom scripts
 [2025-01-06T07:15:20.000Z] - Streamlining pacman hook execution
+[2025-01-06T06:01:25.000Z] - Refactoring AUR build scripts

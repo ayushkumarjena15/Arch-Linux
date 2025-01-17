@@ -1874,3 +1874,4 @@
 [2025-01-16T10:48:58.000Z] - Updating documentation strings for custom scripts
 [2025-01-17T08:52:28.000Z] - Regenerating initramfs (mkinitcpio -P)
 [2025-01-17T07:02:57.000Z] - Regenerating initramfs (mkinitcpio -P)
+[2025-01-17T04:14:50.000Z] - Refactoring AUR build scripts

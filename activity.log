@@ -2890,3 +2890,4 @@
 [2025-02-15T14:07:05.000Z] - Updating documentation strings for custom scripts
 [2025-02-16T08:20:38.000Z] - Streamlining pacman hook execution
 [2025-02-16T03:39:00.000Z] - Updating documentation strings for custom scripts
+[2025-02-16T13:39:56.000Z] - Refactoring AUR build scripts

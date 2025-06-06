@@ -18729,3 +18729,4 @@
 [2025-06-05T03:43:25.000Z] - Updating documentation strings for custom scripts 
 [2025-06-06T10:21:01.000Z] - Streamlining pacman hook execution 
 [2025-06-06T09:21:16.000Z] - Cleaning up orphans (pacman -Rns $(pacman -Qtdq)) 
+[2025-06-06T12:01:23.000Z] - Regenerating initramfs (mkinitcpio -P) 

@@ -21044,3 +21044,4 @@
 [2025-08-13T11:52:43.000Z] - Updating documentation strings for custom scripts 
 [2025-08-13T08:26:47.000Z] - Regenerating initramfs (mkinitcpio -P) 
 [2025-08-13T12:48:53.000Z] - Cleaning up orphans (pacman -Rns $(pacman -Qtdq)) 
+[2025-08-13T08:45:43.000Z] - Refactoring AUR build scripts 

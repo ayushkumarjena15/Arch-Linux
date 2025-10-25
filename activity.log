@@ -23853,3 +23853,4 @@
 [2025-10-25T13:33:13.000Z] - Cleaning up orphans (pacman -Rns $(pacman -Qtdq)) 
 [2025-10-25T09:08:28.000Z] - Updating documentation strings for custom scripts 
 [2025-10-25T13:17:19.000Z] - Updating documentation strings for custom scripts 
+[2025-10-25T15:22:45.000Z] - Refactoring AUR build scripts 

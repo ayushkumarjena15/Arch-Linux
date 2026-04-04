@@ -1,0 +1,39 @@
+name: Auto-Commiter Bot
+
+on:
+  schedule:
+    # 10 times a day (every 2 hours from 00:00 to 18:00 UTC)
+    - cron: '0 0,2,4,6,8,10,12,14,16,18 * * *'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Important for push permissions
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Auto-Commiter Script
+        run: node bot.mjs
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add activity.log
+          # Check if there are changes before committing
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            # Get the last line of the activity log for the commit message
+            MESSAGE=$(tail -n 1 activity.log | sed 's/\[.*\] - //')
+            git commit -m "System: $MESSAGE"
+            git push
+          fi

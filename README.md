@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ayushkumarjena15/Arch-Linux/main/autocommit_bot_logo.png" width="180" height="180" alt="Arch Linux Core">
   <h1>🏔️ Arch Linux Core Management</h1>
   <p><strong>Professional System Tools & Configuration Hub</strong></p>
 
